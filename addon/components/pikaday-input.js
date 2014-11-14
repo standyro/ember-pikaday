@@ -41,7 +41,7 @@ export default Ember.Component.extend({
 
   setDate: function() {
     this.get('pikaday').setDate(this.get('value'), true);
-  }.observes('value')
+  }.observes('value'),
 
   setMinDate: function() {
     var minDate = this.get('minDate');
