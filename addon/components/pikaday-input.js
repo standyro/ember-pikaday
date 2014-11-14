@@ -29,6 +29,7 @@ export default Ember.Component.extend({
 
     this.set('pikaday', pikaday);
     this.get('pikaday').setDate(this.get('value'), true);
+    this.get('pikaday').setMinDate(this.get('minDate'));
   }.on('didInsertElement'),
 
   teardownPikaday: function() {
