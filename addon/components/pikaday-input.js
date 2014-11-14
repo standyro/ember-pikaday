@@ -16,6 +16,8 @@ export default Ember.Component.extend({
         });
       },
       firstDay: 1,
+      minDate: this.get('minDate');
+      maxDate: this.get('maxDate');
       format: this.get('format') || 'DD.MM.YYYY'
     };
 
